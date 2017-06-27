@@ -1,0 +1,9 @@
+[submodule "pthread-win32"]
+	path = pthread-win32
+	url = https://github.com/GerHobbelt/pthread-win32.git
+[submodule "OpenCVBuiltFilesForWindows"]
+	path = OpenCVBuiltFilesForWindows
+	url = https://github.com/kishimoto-exvision/OpenCVBuiltFilesForWindows.git
+[submodule "darknet-win32"]
+	path = darknet-win32
+	url = https://github.com/kishimoto-exvision/darknet-win32.git
