@@ -4,6 +4,6 @@
 [submodule "OpenCVBuiltFilesForWindows"]
 	path = OpenCVBuiltFilesForWindows
 	url = https://github.com/kishimoto-exvision/OpenCVBuiltFilesForWindows.git
-[submodule "darknet-win32"]
-	path = darknet-win32
-	url = https://github.com/kishimoto-exvision/darknet-win32.git
+[submodule "Projects/darknet"]
+	path = Projects/darknet
+	url = https://github.com/pjreddie/darknet
