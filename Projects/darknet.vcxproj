@@ -11,17 +11,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\examples\darknet.c" />
-    <ClCompile Include="darknetLibraryLinks.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="pthread.h" />
-    <ClInclude Include="sched.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\darknet_lib.vcxproj">
+    <ProjectReference Include="darknet_lib.vcxproj">
       <Project>{e41dda6a-253e-4e30-a03c-10f40410f49c}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="darknet-win32\win32\darknetLibraryLinks.c" />
+    <ClCompile Include="darknet\examples\darknet.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{56A3D723-DC7C-442D-97CA-053A79F1CCD0}</ProjectGuid>
@@ -56,16 +52,14 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>$(ProjectDir)$(ProjectName)\bin\$(PlatformTarget)\$(Configuration)\</OutDir>
-    <IntDir>$(ProjectDir)$(ProjectName)\obj\$(PlatformTarget)\$(Configuration)\</IntDir>
-    <IncludePath>$(ProjectDir)\..\include;$(ProjectDir);C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;$(ProjectDir)..\..\OpenCVBuiltFilesForWindows\opencv_x64\install\include;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
-    <LibraryPath>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64;$(ProjectDir)..\..\OpenCVBuiltFilesForWindows\opencv_x64\install\x64\vc14\lib;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
+    <OutDir>$(ProjectDir)bin\$(PlatformTarget)_MSVC2015.$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)obj\$(ProjectName)\$(PlatformTarget)_MSVC2015.$(Configuration)\</IntDir>
+    <IncludePath>$(ProjectDir)darknet\include;$(ProjectDir)darknet\src;$(ProjectDir)darknet-win32\win32;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;$(ProjectDir)..\OpenCVBuiltFilesForWindows\opencv_x64\install\include;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>$(ProjectDir)$(ProjectName)\bin\$(PlatformTarget)\$(Configuration)\</OutDir>
-    <IntDir>$(ProjectDir)$(ProjectName)\obj\$(PlatformTarget)\$(Configuration)\</IntDir>
-    <IncludePath>$(ProjectDir)\..\include;$(ProjectDir);C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;$(ProjectDir)..\..\OpenCVBuiltFilesForWindows\opencv_x64\install\include;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
-    <LibraryPath>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64;$(ProjectDir)..\..\OpenCVBuiltFilesForWindows\opencv_x64\install\x64\vc14\lib;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
+    <OutDir>$(ProjectDir)bin\$(PlatformTarget)_MSVC2015.$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)obj\$(ProjectName)\$(PlatformTarget)_MSVC2015.$(Configuration)\</IntDir>
+    <IncludePath>$(ProjectDir)darknet\include;$(ProjectDir)darknet\src;$(ProjectDir)darknet-win32\win32;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;$(ProjectDir)..\OpenCVBuiltFilesForWindows\opencv_x64\install\include;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -76,8 +70,8 @@
     </ClCompile>
     <PostBuildEvent />
     <PostBuildEvent>
-      <Command>copy "$(TargetPath)" "$(ProjectDir)..\$(TargetFileName)"
-copy "$(ProjectDir)\bin\x64\pthread_dll.dll" "$(ProjectDir)..\pthread_dll.dll"</Command>
+      <Command>
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -95,8 +89,8 @@ copy "$(ProjectDir)\bin\x64\pthread_dll.dll" "$(ProjectDir)..\pthread_dll.dll"</
     </Link>
     <PostBuildEvent />
     <PostBuildEvent>
-      <Command>copy "$(TargetPath)" "$(ProjectDir)..\$(TargetFileName)"
-copy "$(ProjectDir)\bin\x64\pthread_dll.dll" "$(ProjectDir)..\pthread_dll.dll"</Command>
+      <Command>
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

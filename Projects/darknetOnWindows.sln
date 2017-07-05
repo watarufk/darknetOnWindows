@@ -5,7 +5,9 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "darknet", "darknet.vcxproj", "{56A3D723-DC7C-442D-97CA-053A79F1CCD0}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "darknet_lib", "..\darknet_lib.vcxproj", "{E41DDA6A-253E-4E30-A03C-10F40410F49C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "darknet_lib", "darknet_lib.vcxproj", "{E41DDA6A-253E-4E30-A03C-10F40410F49C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pthread_dll", "..\pthread-win32\pthread.2015.vcxproj", "{5D459BA0-5EEB-47D3-A1C4-6B55C8D37EC0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{E41DDA6A-253E-4E30-A03C-10F40410F49C}.Debug|x64.Build.0 = Debug|x64
 		{E41DDA6A-253E-4E30-A03C-10F40410F49C}.Release|x64.ActiveCfg = Release|x64
 		{E41DDA6A-253E-4E30-A03C-10F40410F49C}.Release|x64.Build.0 = Release|x64
+		{5D459BA0-5EEB-47D3-A1C4-6B55C8D37EC0}.Debug|x64.ActiveCfg = Debug|x64
+		{5D459BA0-5EEB-47D3-A1C4-6B55C8D37EC0}.Debug|x64.Build.0 = Debug|x64
+		{5D459BA0-5EEB-47D3-A1C4-6B55C8D37EC0}.Release|x64.ActiveCfg = Release|x64
+		{5D459BA0-5EEB-47D3-A1C4-6B55C8D37EC0}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

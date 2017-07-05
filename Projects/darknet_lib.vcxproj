@@ -11,132 +11,139 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\darknet.h" />
-    <ClInclude Include="src\activations.h" />
-    <ClInclude Include="src\activation_layer.h" />
-    <ClInclude Include="src\avgpool_layer.h" />
-    <ClInclude Include="src\batchnorm_layer.h" />
-    <ClInclude Include="src\blas.h" />
-    <ClInclude Include="src\box.h" />
-    <ClInclude Include="src\classifier.h" />
-    <ClInclude Include="src\col2im.h" />
-    <ClInclude Include="src\connected_layer.h" />
-    <ClInclude Include="src\convolutional_layer.h" />
-    <ClInclude Include="src\cost_layer.h" />
-    <ClInclude Include="src\crnn_layer.h" />
-    <ClInclude Include="src\crop_layer.h" />
-    <ClInclude Include="src\cuda.h" />
-    <ClInclude Include="src\data.h" />
-    <ClInclude Include="src\deconvolutional_layer.h" />
-    <ClInclude Include="src\demo.h" />
-    <ClInclude Include="src\detection_layer.h" />
-    <ClInclude Include="src\dropout_layer.h" />
-    <ClInclude Include="src\gemm.h" />
-    <ClInclude Include="src\gru_layer.h" />
-    <ClInclude Include="src\im2col.h" />
-    <ClInclude Include="src\image.h" />
-    <ClInclude Include="src\layer.h" />
-    <ClInclude Include="src\list.h" />
-    <ClInclude Include="src\local_layer.h" />
-    <ClInclude Include="src\lstm_layer.h" />
-    <ClInclude Include="src\matrix.h" />
-    <ClInclude Include="src\maxpool_layer.h" />
-    <ClInclude Include="src\network.h" />
-    <ClInclude Include="src\normalization_layer.h" />
-    <ClInclude Include="src\option_list.h" />
-    <ClInclude Include="src\parser.h" />
-    <ClInclude Include="src\region_layer.h" />
-    <ClInclude Include="src\reorg_layer.h" />
-    <ClInclude Include="src\rnn_layer.h" />
-    <ClInclude Include="src\route_layer.h" />
-    <ClInclude Include="src\shortcut_layer.h" />
-    <ClInclude Include="src\softmax_layer.h" />
-    <ClInclude Include="src\stb_image.h" />
-    <ClInclude Include="src\stb_image_write.h" />
-    <ClInclude Include="src\tree.h" />
-    <ClInclude Include="src\utils.h" />
-    <ClInclude Include="win32\pthread.h" />
-    <ClInclude Include="win32\sched.h" />
-    <ClInclude Include="win32\sys\time.h" />
-    <ClInclude Include="win32\time_win32.h" />
-    <ClInclude Include="win32\unistd.h" />
+    <ClCompile Include="darknet-win32\examples\go.c" />
+    <ClCompile Include="darknet-win32\examples\rnn_vid.c" />
+    <ClCompile Include="darknet-win32\src\utils.c" />
+    <ClCompile Include="darknet-win32\win32\darknetLibraryLinks.c" />
+    <ClCompile Include="darknet-win32\win32\time_win32.c" />
+    <ClCompile Include="darknet\examples\art.c" />
+    <ClCompile Include="darknet\examples\captcha.c" />
+    <ClCompile Include="darknet\examples\cifar.c" />
+    <ClCompile Include="darknet\examples\classifier.c" />
+    <ClCompile Include="darknet\examples\coco.c" />
+    <ClCompile Include="darknet\examples\darknet.c" />
+    <ClCompile Include="darknet\examples\detector.c" />
+    <ClCompile Include="darknet\examples\dice.c" />
+    <ClCompile Include="darknet\examples\lsd.c" />
+    <ClCompile Include="darknet\examples\nightmare.c" />
+    <ClCompile Include="darknet\examples\regressor.c" />
+    <ClCompile Include="darknet\examples\rnn.c" />
+    <ClCompile Include="darknet\examples\segmenter.c" />
+    <ClCompile Include="darknet\examples\super.c" />
+    <ClCompile Include="darknet\examples\swag.c" />
+    <ClCompile Include="darknet\examples\tag.c" />
+    <ClCompile Include="darknet\examples\voxel.c" />
+    <ClCompile Include="darknet\examples\writing.c" />
+    <ClCompile Include="darknet\examples\yolo.c" />
+    <ClCompile Include="darknet\src\activations.c" />
+    <ClCompile Include="darknet\src\activation_layer.c" />
+    <ClCompile Include="darknet\src\avgpool_layer.c" />
+    <ClCompile Include="darknet\src\batchnorm_layer.c" />
+    <ClCompile Include="darknet\src\blas.c" />
+    <ClCompile Include="darknet\src\box.c" />
+    <ClCompile Include="darknet\src\col2im.c" />
+    <ClCompile Include="darknet\src\compare.c" />
+    <ClCompile Include="darknet\src\connected_layer.c" />
+    <ClCompile Include="darknet\src\convolutional_layer.c" />
+    <ClCompile Include="darknet\src\cost_layer.c" />
+    <ClCompile Include="darknet\src\crnn_layer.c" />
+    <ClCompile Include="darknet\src\crop_layer.c" />
+    <ClCompile Include="darknet\src\cuda.c" />
+    <ClCompile Include="darknet\src\data.c" />
+    <ClCompile Include="darknet\src\deconvolutional_layer.c" />
+    <ClCompile Include="darknet\src\demo.c" />
+    <ClCompile Include="darknet\src\detection_layer.c" />
+    <ClCompile Include="darknet\src\dropout_layer.c" />
+    <ClCompile Include="darknet\src\gemm.c" />
+    <ClCompile Include="darknet\src\gru_layer.c" />
+    <ClCompile Include="darknet\src\im2col.c" />
+    <ClCompile Include="darknet\src\image.c" />
+    <ClCompile Include="darknet\src\layer.c" />
+    <ClCompile Include="darknet\src\list.c" />
+    <ClCompile Include="darknet\src\local_layer.c" />
+    <ClCompile Include="darknet\src\lstm_layer.c" />
+    <ClCompile Include="darknet\src\matrix.c" />
+    <ClCompile Include="darknet\src\maxpool_layer.c" />
+    <ClCompile Include="darknet\src\network.c" />
+    <ClCompile Include="darknet\src\normalization_layer.c" />
+    <ClCompile Include="darknet\src\option_list.c" />
+    <ClCompile Include="darknet\src\parser.c" />
+    <ClCompile Include="darknet\src\region_layer.c" />
+    <ClCompile Include="darknet\src\reorg_layer.c" />
+    <ClCompile Include="darknet\src\rnn_layer.c" />
+    <ClCompile Include="darknet\src\route_layer.c" />
+    <ClCompile Include="darknet\src\shortcut_layer.c" />
+    <ClCompile Include="darknet\src\softmax_layer.c" />
+    <ClCompile Include="darknet\src\tree.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="examples\art.c" />
-    <ClCompile Include="examples\captcha.c" />
-    <ClCompile Include="examples\cifar.c" />
-    <ClCompile Include="examples\classifier.c" />
-    <ClCompile Include="examples\coco.c" />
-    <ClCompile Include="examples\detector.c" />
-    <ClCompile Include="examples\dice.c" />
-    <ClCompile Include="examples\go.c" />
-    <ClCompile Include="examples\lsd.c" />
-    <ClCompile Include="examples\nightmare.c" />
-    <ClCompile Include="examples\regressor.c" />
-    <ClCompile Include="examples\rnn.c" />
-    <ClCompile Include="examples\rnn_vid.c" />
-    <ClCompile Include="examples\segmenter.c" />
-    <ClCompile Include="examples\super.c" />
-    <ClCompile Include="examples\swag.c" />
-    <ClCompile Include="examples\tag.c" />
-    <ClCompile Include="examples\voxel.c" />
-    <ClCompile Include="examples\writing.c" />
-    <ClCompile Include="examples\yolo.c" />
-    <ClCompile Include="src\activations.c" />
-    <ClCompile Include="src\activation_layer.c" />
-    <ClCompile Include="src\avgpool_layer.c" />
-    <ClCompile Include="src\batchnorm_layer.c" />
-    <ClCompile Include="src\blas.c" />
-    <ClCompile Include="src\box.c" />
-    <ClCompile Include="src\col2im.c" />
-    <ClCompile Include="src\compare.c" />
-    <ClCompile Include="src\connected_layer.c" />
-    <ClCompile Include="src\convolutional_layer.c" />
-    <ClCompile Include="src\cost_layer.c" />
-    <ClCompile Include="src\crnn_layer.c" />
-    <ClCompile Include="src\crop_layer.c" />
-    <ClCompile Include="src\cuda.c" />
-    <ClCompile Include="src\data.c" />
-    <ClCompile Include="src\deconvolutional_layer.c" />
-    <ClCompile Include="src\demo.c" />
-    <ClCompile Include="src\detection_layer.c" />
-    <ClCompile Include="src\dropout_layer.c" />
-    <ClCompile Include="src\gemm.c" />
-    <ClCompile Include="src\gru_layer.c" />
-    <ClCompile Include="src\im2col.c" />
-    <ClCompile Include="src\image.c" />
-    <ClCompile Include="src\layer.c" />
-    <ClCompile Include="src\list.c" />
-    <ClCompile Include="src\local_layer.c" />
-    <ClCompile Include="src\lstm_layer.c" />
-    <ClCompile Include="src\matrix.c" />
-    <ClCompile Include="src\maxpool_layer.c" />
-    <ClCompile Include="src\network.c" />
-    <ClCompile Include="src\normalization_layer.c" />
-    <ClCompile Include="src\option_list.c" />
-    <ClCompile Include="src\parser.c" />
-    <ClCompile Include="src\region_layer.c" />
-    <ClCompile Include="src\reorg_layer.c" />
-    <ClCompile Include="src\rnn_layer.c" />
-    <ClCompile Include="src\route_layer.c" />
-    <ClCompile Include="src\shortcut_layer.c" />
-    <ClCompile Include="src\softmax_layer.c" />
-    <ClCompile Include="src\tree.c" />
-    <ClCompile Include="src\utils.c" />
-    <ClCompile Include="win32\time_win32.c" />
+    <ClInclude Include="darknet-win32\win32\pthread.h" />
+    <ClInclude Include="darknet-win32\win32\sched.h" />
+    <ClInclude Include="darknet-win32\win32\sys\time.h" />
+    <ClInclude Include="darknet-win32\win32\time_win32.h" />
+    <ClInclude Include="darknet-win32\win32\unistd.h" />
+    <ClInclude Include="darknet\include\darknet.h" />
+    <ClInclude Include="darknet\src\activations.h" />
+    <ClInclude Include="darknet\src\activation_layer.h" />
+    <ClInclude Include="darknet\src\avgpool_layer.h" />
+    <ClInclude Include="darknet\src\batchnorm_layer.h" />
+    <ClInclude Include="darknet\src\blas.h" />
+    <ClInclude Include="darknet\src\box.h" />
+    <ClInclude Include="darknet\src\classifier.h" />
+    <ClInclude Include="darknet\src\col2im.h" />
+    <ClInclude Include="darknet\src\connected_layer.h" />
+    <ClInclude Include="darknet\src\convolutional_layer.h" />
+    <ClInclude Include="darknet\src\cost_layer.h" />
+    <ClInclude Include="darknet\src\crnn_layer.h" />
+    <ClInclude Include="darknet\src\crop_layer.h" />
+    <ClInclude Include="darknet\src\cuda.h" />
+    <ClInclude Include="darknet\src\data.h" />
+    <ClInclude Include="darknet\src\deconvolutional_layer.h" />
+    <ClInclude Include="darknet\src\demo.h" />
+    <ClInclude Include="darknet\src\detection_layer.h" />
+    <ClInclude Include="darknet\src\dropout_layer.h" />
+    <ClInclude Include="darknet\src\gemm.h" />
+    <ClInclude Include="darknet\src\gru_layer.h" />
+    <ClInclude Include="darknet\src\im2col.h" />
+    <ClInclude Include="darknet\src\image.h" />
+    <ClInclude Include="darknet\src\layer.h" />
+    <ClInclude Include="darknet\src\list.h" />
+    <ClInclude Include="darknet\src\local_layer.h" />
+    <ClInclude Include="darknet\src\lstm_layer.h" />
+    <ClInclude Include="darknet\src\matrix.h" />
+    <ClInclude Include="darknet\src\maxpool_layer.h" />
+    <ClInclude Include="darknet\src\network.h" />
+    <ClInclude Include="darknet\src\normalization_layer.h" />
+    <ClInclude Include="darknet\src\option_list.h" />
+    <ClInclude Include="darknet\src\parser.h" />
+    <ClInclude Include="darknet\src\region_layer.h" />
+    <ClInclude Include="darknet\src\reorg_layer.h" />
+    <ClInclude Include="darknet\src\rnn_layer.h" />
+    <ClInclude Include="darknet\src\route_layer.h" />
+    <ClInclude Include="darknet\src\shortcut_layer.h" />
+    <ClInclude Include="darknet\src\softmax_layer.h" />
+    <ClInclude Include="darknet\src\stb_image.h" />
+    <ClInclude Include="darknet\src\stb_image_write.h" />
+    <ClInclude Include="darknet\src\tree.h" />
+    <ClInclude Include="darknet\src\utils.h" />
   </ItemGroup>
   <ItemGroup>
-    <CudaCompile Include="src\activation_kernels.cu" />
-    <CudaCompile Include="src\avgpool_layer_kernels.cu" />
-    <CudaCompile Include="src\blas_kernels.cu" />
-    <CudaCompile Include="src\col2im_kernels.cu" />
-    <CudaCompile Include="src\convolutional_kernels.cu" />
-    <CudaCompile Include="src\crop_layer_kernels.cu" />
-    <CudaCompile Include="src\deconvolutional_kernels.cu" />
-    <CudaCompile Include="src\dropout_layer_kernels.cu" />
-    <CudaCompile Include="src\im2col_kernels.cu" />
-    <CudaCompile Include="src\maxpool_layer_kernels.cu" />
-    <CudaCompile Include="src\network_kernels.cu" />
+    <CudaCompile Include="darknet\src\activation_kernels.cu" />
+    <CudaCompile Include="darknet\src\avgpool_layer_kernels.cu" />
+    <CudaCompile Include="darknet\src\blas_kernels.cu" />
+    <CudaCompile Include="darknet\src\col2im_kernels.cu" />
+    <CudaCompile Include="darknet\src\convolutional_kernels.cu" />
+    <CudaCompile Include="darknet\src\crop_layer_kernels.cu" />
+    <CudaCompile Include="darknet\src\deconvolutional_kernels.cu" />
+    <CudaCompile Include="darknet\src\dropout_layer_kernels.cu" />
+    <CudaCompile Include="darknet\src\im2col_kernels.cu" />
+    <CudaCompile Include="darknet\src\maxpool_layer_kernels.cu" />
+    <CudaCompile Include="darknet\src\network_kernels.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\pthread-win32\pthread.2015.vcxproj">
+      <Project>{5d459ba0-5eeb-47d3-a1c4-6b55c8d37ec0}</Project>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{E41DDA6A-253E-4E30-A03C-10F40410F49C}</ProjectGuid>
@@ -171,16 +178,14 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>$(ProjectDir)win32\$(ProjectName)\bin\$(PlatformTarget)\$(Configuration)\</OutDir>
-    <IntDir>$(ProjectDir)win32\$(ProjectName)\obj\$(PlatformTarget)\$(Configuration)\</IntDir>
-    <IncludePath>$(ProjectDir)include;$(ProjectDir)win32;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;$(ProjectDir)..\OpenCVBuiltFilesForWindows\opencv_x64\install\include;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
-    <LibraryPath>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64;$(ProjectDir)..\OpenCVBuiltFilesForWindows\opencv_x64\install\x64\vc14\lib;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
+    <OutDir>$(ProjectDir)bin\$(PlatformTarget)_MSVC2015.$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)obj\$(ProjectName)\$(PlatformTarget)_MSVC2015.$(Configuration)\</IntDir>
+    <IncludePath>$(ProjectDir)darknet\include;$(ProjectDir)darknet\src;$(ProjectDir)darknet-win32\win32;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;$(ProjectDir)..\OpenCVBuiltFilesForWindows\opencv_x64\install\include;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>$(ProjectDir)win32\$(ProjectName)\bin\$(PlatformTarget)\$(Configuration)\</OutDir>
-    <IntDir>$(ProjectDir)win32\$(ProjectName)\obj\$(PlatformTarget)\$(Configuration)\</IntDir>
-    <IncludePath>$(ProjectDir)include;$(ProjectDir)win32;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;$(ProjectDir)..\OpenCVBuiltFilesForWindows\opencv_x64\install\include;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
-    <LibraryPath>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64;$(ProjectDir)..\OpenCVBuiltFilesForWindows\opencv_x64\install\x64\vc14\lib;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
+    <OutDir>$(ProjectDir)bin\$(PlatformTarget)_MSVC2015.$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)obj\$(ProjectName)\$(PlatformTarget)_MSVC2015.$(Configuration)\</IntDir>
+    <IncludePath>$(ProjectDir)darknet\include;$(ProjectDir)darknet\src;$(ProjectDir)darknet-win32\win32;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;$(ProjectDir)..\OpenCVBuiltFilesForWindows\opencv_x64\install\include;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
