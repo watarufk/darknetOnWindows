@@ -17,10 +17,18 @@
 //#endif
 // So, I have to define PTW32_STATIC_LIB in the project settings.
 //#define PTW32_STATIC_LIB
+#if 1
 #if _DEBUG
 #pragma comment(lib, "bin/x64_MSVC2015.Debug/pthread_dll.lib")
 #else
 #pragma comment(lib, "bin/x64_MSVC2015.Release/pthread_dll.lib")
+#endif
+#else
+#if _DEBUG
+#pragma comment(lib, "bin/x64_MSVC2015.Debug/pthread_lib.lib")
+#else
+#pragma comment(lib, "bin/x64_MSVC2015.Release/pthread_lib.lib")
+#endif
 #endif
 
 
