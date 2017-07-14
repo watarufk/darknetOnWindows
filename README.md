@@ -1,12 +1,11 @@
 # darknetOnWindows
 
-About darknet and YOLO, please refer to
-<https://pjreddie.com/darknet/>
-<https://github.com/pjreddie/darknet>
+About darknet and YOLO, please refer to  
+<https://pjreddie.com/darknet/>  
+<https://github.com/pjreddie/darknet>  
 
-This repository has some modification and additional files (pthread, unistd.h, time.h and so on) of darknet, to run it on Windows.
-To try YOLO with a web-cam, please download "yolo.weights" from <https://pjreddie.com/media/files/yolo.weights> to Projects/Examples folder,
-and run Projects/Examples/YoloWithCamera.bat file.
+This repository has some modification and additional files (pthread, unistd.h, time.h and so on) of darknet, to run it on Windows.  
+To try YOLO with a web-cam, please download "yolo.weights" from <https://pjreddie.com/media/files/yolo.weights> to Projects/Examples folder, and run Projects/Examples/YoloWithCamera.bat file.
 
 ## Requirement to build
 * Windows 7 or above
@@ -14,7 +13,7 @@ and run Projects/Examples/YoloWithCamera.bat file.
 * CUDA Toolkit v8.0
 
 ## License
-MIT License (<https://github.com/kishimoto-exvision/darknetOnWindows/blob/master/LICENSE>)
+MIT License (<https://github.com/kishimoto-exvision/darknetOnWindows/blob/master/LICENSE>)  
 (Currently I use it, but I'd like to use the same licenses as darknet.  But please be careful this uses pthread-win32 and it is LGPL-2.1.)
 
 ## Third Party Libraries
