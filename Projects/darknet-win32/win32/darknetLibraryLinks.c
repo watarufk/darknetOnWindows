@@ -70,8 +70,18 @@
 #undef CUDA_v8_LIB_X64_FOLDER_PATH
 #endif
 
+#ifdef GPU
 #if _DEBUG
 #pragma comment(lib, "bin/x64_MSVC2015.Debug/darknet_lib.lib")
 #else
 #pragma comment(lib, "bin/x64_MSVC2015.Release/darknet_lib.lib")
+#endif
+
+#else
+#if _DEBUG
+#pragma comment(lib, "bin/x64_MSVC2015.Debug/darknet_lib_nogpu.lib")
+#else
+#pragma comment(lib, "bin/x64_MSVC2015.Release/darknet_lib_nogpu.lib")
+#endif
+
 #endif

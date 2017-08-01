@@ -11,6 +11,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pthread_dll", "..\pthread-w
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pthread_lib", "..\pthread-win32\pthread_lib.2015.vcxproj", "{A063DFAD-6995-4E1A-AFFF-E43DC11E95B1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "darknet_lib_nogpu", "darknet_lib_nogpu.vcxproj", "{CC05059E-2899-46B2-8E27-0358D0ED0CB8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "darknet_nogpu", "darknet_nogpu.vcxproj", "{4925F3C0-1475-4245-84D8-9929B1F6FCA5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -33,6 +37,14 @@ Global
 		{A063DFAD-6995-4E1A-AFFF-E43DC11E95B1}.Debug|x64.Build.0 = Debug|x64
 		{A063DFAD-6995-4E1A-AFFF-E43DC11E95B1}.Release|x64.ActiveCfg = Release|x64
 		{A063DFAD-6995-4E1A-AFFF-E43DC11E95B1}.Release|x64.Build.0 = Release|x64
+		{CC05059E-2899-46B2-8E27-0358D0ED0CB8}.Debug|x64.ActiveCfg = Debug|x64
+		{CC05059E-2899-46B2-8E27-0358D0ED0CB8}.Debug|x64.Build.0 = Debug|x64
+		{CC05059E-2899-46B2-8E27-0358D0ED0CB8}.Release|x64.ActiveCfg = Release|x64
+		{CC05059E-2899-46B2-8E27-0358D0ED0CB8}.Release|x64.Build.0 = Release|x64
+		{4925F3C0-1475-4245-84D8-9929B1F6FCA5}.Debug|x64.ActiveCfg = Debug|x64
+		{4925F3C0-1475-4245-84D8-9929B1F6FCA5}.Debug|x64.Build.0 = Debug|x64
+		{4925F3C0-1475-4245-84D8-9929B1F6FCA5}.Release|x64.ActiveCfg = Release|x64
+		{4925F3C0-1475-4245-84D8-9929B1F6FCA5}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
