@@ -39,7 +39,8 @@
 
 #ifdef OPENCV
 #ifdef _DEBUG
-#define OPENCV_LIB_EXT CVAUX_STR(CV_VERSION_EPOCH) CVAUX_STR(CV_VERSION_MAJOR) CVAUX_STR(CV_VERSION_MINOR) "d.lib"
+//#define OPENCV_LIB_EXT CVAUX_STR(CV_VERSION_EPOCH) CVAUX_STR(CV_VERSION_MAJOR) CVAUX_STR(CV_VERSION_MINOR) "d.lib"
+#define OPENCV_LIB_EXT CVAUX_STR(CV_VERSION_EPOCH) CVAUX_STR(CV_VERSION_MAJOR) CVAUX_STR(CV_VERSION_MINOR) ".lib"
 #else
 #define OPENCV_LIB_EXT CVAUX_STR(CV_VERSION_EPOCH) CVAUX_STR(CV_VERSION_MAJOR) CVAUX_STR(CV_VERSION_MINOR) ".lib"
 #endif
@@ -70,8 +71,24 @@
 #undef CUDA_v8_LIB_X64_FOLDER_PATH
 #endif
 
+#ifdef GPU
 #if _DEBUG
 #pragma comment(lib, "bin/x64_MSVC2015.Debug/darknet_lib.lib")
 #else
 #pragma comment(lib, "bin/x64_MSVC2015.Release/darknet_lib.lib")
+#endif
+
+#else
+
+#ifdef INTEL_MKL
+// NOTE: SGEMM needs only this lib file, but setting "Use Intel MKL" to "Parallel" in Project settings is useful.
+//#pragma comment(lib, "C:/Program Files (x86)/IntelSWTools/compilers_and_libraries_2017.2.187/windows/mkl/lib/intel64_win/mkl_rt.lib")
+#endif
+
+#if _DEBUG
+#pragma comment(lib, "bin/x64_MSVC2015.Debug/darknet_lib_nogpu.lib")
+#else
+#pragma comment(lib, "bin/x64_MSVC2015.Release/darknet_lib_nogpu.lib")
+#endif
+
 #endif
